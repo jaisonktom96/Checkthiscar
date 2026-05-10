@@ -43,9 +43,9 @@ export default function Home() {
         <Image
           src="/dark-car.svg"
           alt="Car illustration"
-          width={700}
-          height={350}
-          className="w-full max-w-2xl mb-8"
+          width={400}
+          height={200}
+          className="w-full max-w-sm mb-8"
           priority
         />
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.08] mb-6">

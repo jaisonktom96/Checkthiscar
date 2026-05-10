@@ -45,7 +45,7 @@ export default function Home() {
           alt="Car illustration"
           width={400}
           height={200}
-          className="w-full max-w-sm mb-8"
+          className="w-full max-w-[200px] mb-8"
           priority
         />
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.08] mb-6">

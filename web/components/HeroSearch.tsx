@@ -87,7 +87,7 @@ export function HeroSearch() {
   const canStart = selectedModel && selectedYear && selectedVariant;
 
   return (
-    <div className="space-y-5 w-full max-w-2xl flex flex-col items-center">
+    <div className="space-y-5 w-full flex flex-col items-start md:items-stretch">
       {/* Model search */}
       <div ref={containerRef} className="relative w-full">
         <Search

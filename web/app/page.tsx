@@ -39,23 +39,34 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-5xl px-6 pt-10 pb-16 flex flex-col items-center text-center">
-        <Image
-          src="/dark-car.svg"
-          alt="Car illustration"
-          width={400}
-          height={200}
-          className="w-full max-w-[200px] mb-8"
-          priority
-        />
-        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.08] mb-6">
-          Be an informed used car buyer
-        </h1>
-        <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-10 max-w-xl">
-          Audit any used car instantly. Upload images and service history to uncover hidden risks
-          and get a fair offer price.
-        </p>
+      <section className="mx-auto max-w-5xl px-6 pt-[100px] pb-[100px] flex flex-col gap-10">
+        {/* Top row: image + title/description */}
+        <div className="flex flex-col md:flex-row md:items-stretch gap-16 md:gap-0">
+          {/* Left: image fills height of right column */}
+          <div className="flex-shrink-0 relative w-full md:w-[360px] md:self-stretch">
+            <Image
+              src="/dark-car.svg"
+              alt="Car illustration"
+              width={720}
+              height={480}
+              className="w-full h-auto md:absolute md:inset-0 md:h-full md:w-full md:object-contain md:object-left-bottom"
+              priority
+            />
+          </div>
 
+          {/* Right: title + description only */}
+          <div className="flex flex-col justify-center flex-1 text-left">
+            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.08] mb-6">
+              Be an informed used car buyer
+            </h1>
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+              Audit any used car instantly. Upload images and service history to uncover hidden risks
+              and get a fair offer price.
+            </p>
+          </div>
+        </div>
+
+        {/* Full-width search below */}
         <HeroSearch />
       </section>
 
